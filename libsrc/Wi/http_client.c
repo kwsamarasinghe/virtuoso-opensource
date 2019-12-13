@@ -2131,7 +2131,7 @@ http_cli_std_init (char * url, caddr_t * qst)
   ctx->hcctx_http_maj = 1;
   ctx->hcctx_http_min = 1;
   ctx->hcctx_keep_alive = 1;
-  ctx->hcctx_timeout = 100;
+  ctx->hcctx_timeout = 1000;
   ctx->hcctx_qst = qst;
 
   ctx->hcctx_url = box_string (url);
